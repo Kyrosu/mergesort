@@ -5,6 +5,9 @@ public class MergeSort {
     }
      
      public static void mergeSort(int[] a) {
+         if (a == null){
+            return;
+         }
         int[] tmpArray = new int[a.length];
         mergeSort(a, tmpArray, 0, a.length - 1);
 
